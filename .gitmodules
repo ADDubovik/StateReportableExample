@@ -1,0 +1,3 @@
+[submodule "3rdparty/StateReportable"]
+	path = 3rdparty/StateReportable
+	url = https://github.com/ADDubovik/StateReportable.git
