@@ -5,7 +5,7 @@
 
 SomethingAsynchronous::State SomethingAsynchronous::nextStep(State state)
 {
-  return static_cast<State>(static_cast<int>(state) + 1);
+  return (m_state == State::finished) ? State::finished : static_cast<State>(static_cast<int>(state) + 1);
 }
 
 
