@@ -10,4 +10,7 @@ set (BRAND_COMPANYNAME "ADDubovik")
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
+find_library(STATE_REPORTABLE_LIB_DEBUG   NAMES StateReportable_lib.lib)
+find_library(STATE_REPORTABLE_LIB_RELEASE NAMES StateReportable_lib.lib)
+
 add_subdirectory(src)

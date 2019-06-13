@@ -15,7 +15,8 @@ include_directories(
 )
 
 set(STATE_REPORTABLE_LIB
-	${CMAKE_SOURCE_DIR}/3rdparty/StateReportable/.build32/src/StateReportable/$(Configuration)/StateReportable_lib.lib
+	optimized ${STATE_REPORTABLE_LIB_RELEASE}
+	debug     ${STATE_REPORTABLE_LIB_DEBUG}
 )
 
 add_executable(${PROJECT_NAME} ${SRC})
